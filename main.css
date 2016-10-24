@@ -4,11 +4,13 @@
 .heading {
 	font-size: 36px;
 }
-.homePage {
+.page {
 	background-image: url(sayagata-400px.png);
 	background-repeat: repeat;
 	font-family: 'Open Sans', sans-serif;
-	color: #000000;
+	font-color: #000000;
+	border: none;
+	text-align: left;
 }
 .menu {
 	font-family: 'Open Sans', sans-serif;
@@ -36,15 +38,22 @@ li.menu a:hover {
 .active {
 	background-color: #4CAF50;
 }
+.notActive {
+	background-color: #333;
+}
 a.menu:link {
-    color: white;
+	font-color: white;
+	text-decoration: none;
 }
 a.menu:visited {
-    color: white;
+	font-color: white;
+	text-decoration: none;
 }
 a.menu:hover {
-    color: white;
+	font-color: white;
+	text-decoration: none;
 }
 a.menu:active {
-    color: white;
+	font-color: white;
+	text-decoration: none;
 }
