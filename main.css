@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* Main CSS File */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+.heading {
+	font-size: 36px;
+}
+.homePage {
+	background-image: url(sayagata-400px.png);
+	background-repeat: repeat;
+	font-family: 'Open Sans', sans-serif;
+	color: #000000;
+}
+.menu {
+	font-family: 'Open Sans', sans-serif;
+}
+ul.menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+li.menu {
+	float: left;
+}
+li.menu a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li.menu a:hover {
+	background-color: #111;
+}
+.active {
+	background-color: #4CAF50;
+}
+a.menu:link {
+    color: white;
+}
+a.menu:visited {
+    color: white;
+}
+a.menu:hover {
+    color: white;
+}
+a.menu:active {
+    color: white;
+}
