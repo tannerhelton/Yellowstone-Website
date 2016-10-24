@@ -32,28 +32,21 @@ li.menu a {
 	padding: 14px 16px;
 	text-decoration: none;
 }
+ls.menu a:link {
+	color: white;
+	text-decoration: none;
+}
 li.menu a:hover {
 	background-color: #111;
+	text-decoration: none;
+}
+li.menu a:visited {
+	color: white;
+	text-decoration: none;
 }
 .active {
 	background-color: #4CAF50;
 }
 .notActive {
 	background-color: #333;
-}
-a.menu:link {
-	font-color: white;
-	text-decoration: none;
-}
-a.menu:visited {
-	font-color: white;
-	text-decoration: none;
-}
-a.menu:hover {
-	font-color: white;
-	text-decoration: none;
-}
-a.menu:active {
-	font-color: white;
-	text-decoration: none;
 }
