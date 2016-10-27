@@ -1,0 +1,4 @@
+.DS_Strore
+node_modules
+server.js
+package.json
