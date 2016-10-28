@@ -7,7 +7,7 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="bootstrap.min.css">
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <title>Yellowstone National Park</title>
@@ -84,48 +84,76 @@
       <li class="menu"><a class="notActive" href="#citation" data-transition="flow">Citation</a></li>
     </ul>
     <p class="heading">Photos</p>
-    <table>
-      <tbody>
-        <tr>
-          <td><img id="myImg" src="pictures/bison.jpg" alt="Bison at Yellowstone" width="300" height="200"></td>
-          <td width="10px"></td>
-          <td><img id="myImg" src="pictures/geyser.jpg" alt="Geyser at Yellowstone" width="300" height="200"></td>
-          <td width="10px"></td>
-          <td><img id="myImg" src="pictures/landscape.jpg" alt="Landscape of Yellowstone" width="300" height="200"></td><td width="10px"></td>
-          <td><img id="myImg" src="pictures/streetbison.jpg" alt="Bison on the street" width="300" height="200"></td><td width="10px"></td>
-          <td><img id="myImg" src="pictures/summer.jpg" alt="Summer at Yellowstone" width="300" height="200"></td>
-        </tr>
-      </tbody>
-    </table>
-    <!-- The Modal -->
-    <div id="myModal" class="modal"><span class="close"><img width="40" height="40" src="pictures/x.png"></span><img class="modal-content" id="img01">
-      <div id="caption"></div>
+    <div class="img"> <a data-toggle="modal" data-target="#bisonModal" href="#"> <img src="pictures/bison.jpg" alt="Bison at Yellowstone" width="300" height="200"> </a>
+      <div class="desc">Bison at Yellowstone</div>
     </div>
-    <div id="myModal" class="modal"><span class="close"><img width="40" height="40" src="pictures/x.png"></span><img class="modal-content" id="img01">
-      <div id="caption"></div>
+    <div class="img"> <a data-toggle="modal" data-target="#geyserModal" href="#"> <img src="pictures/geyser.jpg" alt="Geyser at Yellowstone" width="300" height="200"> </a>
+      <div class="desc">Geyser at Yellowstone</div>
     </div>
-    <script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-</script> 
+    <div class="img"> <a data-toggle="modal" data-target="#landscapeModal" href="#"> <img src="pictures/landscape.jpg" alt="Landscape of Yellowstone" width="300" height="200"> </a>
+      <div class="desc">Landscape of Yellowstone</div>
+    </div>
+    
+    <!-- Bison Modal -->
+    <div class="modal fade" id="bisonModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header"> 
+            <!--<button type="button" class="close2" data-dismiss="modal">&times;</button>-->
+            <h4 class="modal-title">Bison at Yellowstone</h4>
+          </div>
+          <div class="modal-body"> <img src="pictures/bison.jpg" width="100%"> </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bison Modal -->
+    <div class="modal fade" id="bisonModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header"> 
+            <!--<button type="button" class="close2" data-dismiss="modal">&times;</button>-->
+            <h4 class="modal-title">Bison at Yellowstone</h4>
+          </div>
+          <div class="modal-body"> <img src="pictures/bison.jpg" width="100%"> </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Landscape Modal -->
+    <div class="modal fade" id="landscapeModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header"> 
+            <!--<button type="button" class="close2" data-dismiss="modal">&times;</button>-->
+            <h4 class="modal-title">Bison at Yellowstone</h4>
+          </div>
+          <div class="modal-body"> <img src="pictures/bison.jpg" width="100%"> </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Geyser Modal -->
+    <div class="modal fade" id="geyserModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header"> 
+            <!--<button type="button" class="close2" data-dismiss="modal">&times;</button>-->
+            <h4 class="modal-title">Geyser at Yellowstone</h4>
+          </div>
+          <div class="modal-body"> <img src="pictures/geyser.jpg" width="100%"> </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <!--#########################--> 
