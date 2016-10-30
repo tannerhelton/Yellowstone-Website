@@ -7,3 +7,5 @@ Street Bison - https://pbs.twimg.com/media/B58pj-lIUAE2FDg.jpg
 jQuery - https://jquery.com/
 Bootstrap - http://getbootstrap.com/
 W3Schools - http://www.w3schools.com/
+Another Yellowstone Site - http://www.yellowstonenationalparklodges.com/about-us/
+National Park Service - https://www.nps.gov/yell/learn/historyculture/timeline.htm
